@@ -1,23 +1,82 @@
-# Compiled class file
-*.class
-
-# Log file
+# Various Node ignoramuses.
+logs
 *.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.lock-wscript
+build/Release
+/node_modules/**/*
+fonts/node_modules/**/*
+vendor/node_modules/**/*
+!/tests/node_modules/**/*
+jspm_modules
+.npm
+.node_repl_history
+.nyc_output/
 
-# BlueJ files
-*.ctxt
+# Visual Studio Code ignoramuses.
+.vscode/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# IDE Code ignoramuses.
+.idea/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# Various Windows ignoramuses.
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Various OSX ignoramuses.
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Various Linux ignoramuses.
+.fuse_hidden*
+.directory
+.Trash-*
+
+# Ignore all modules except the default modules.
+/modules/**
+!/modules/default
+!/modules/default/**
+!/modules/README.md**
+
+# Ignore changes to the custom css files.
+/css/custom.css
+
+# Ignore users config file but keep the sample.
+/config/*
+!/config/config.js.sample
+
+# Vim
+## swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+## diff patch
+*.orig
+*.rej
+*.bak
